@@ -10,4 +10,4 @@ ln -s $GITHUB_WORKSPACE $PROJECT_ROOT
 cd $PROJECT_ROOT
 go get -v ./...
 cd src
-go build -ldflags "-w -s" -v -o ${GITHUB_REPOSITORY}
+go build -ldflags "-w -s" -v -o ${PROJECT_NAME}

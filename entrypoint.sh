@@ -18,7 +18,7 @@ if [ $GOOS == 'windows' ]; then
   EXT='.exe'
 fi
 
-tar cvfz tmp.tgz "${PROJECT_NAME}${EXT}"
+tar cvfz tmp.tgz "./src/${PROJECT_NAME}${EXT}"
 CHECKSUM=$(md5sum tmp.tgz | cut -d ' ' -f 1)
 
 curl \
